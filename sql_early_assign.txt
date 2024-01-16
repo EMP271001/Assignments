@@ -1,0 +1,14 @@
+1.
+
+SELECT id, COUNT(skills) AS skill_count
+FROM your_table_name
+GROUP BY id
+ORDER BY skill_count DESC
+LIMIT 1;
+
+
+2.
+
+SELECT id
+FROM product_info
+WHERE likes = 0;
